@@ -1,0 +1,150 @@
+body
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  font-size: .12rem
+  display: flex
+  flex-direction: column
+
+.header
+  height: .44rem
+  border-bottom: 1px solid #ccc
+  background: #f13340
+  padding: 0 .08rem
+  box-sizing: border-box
+  p
+    width: 100%
+    height: .34rem
+    margin-top: .05rem
+    position: relative
+    .fa
+      position: absolute
+      top: .1rem
+      font-size: .14rem
+      &:first-child
+        color: #b0b0b0
+        left: .16rem
+      &:last-child
+        right: .16rem
+        color: #fd4350
+    input[type="text"]
+      display: block
+      width: 100%
+      height: 100%
+      border-radius: .17rem
+      border: none
+      outline: none
+      padding: 0 .34rem
+      box-sizing: border-box
+      &::-webkit-input-placeholder
+        color: #b0b0b0
+
+.swiper-container,
+.swiper-container .swiper-wrapper,
+.swiper-container .swiper-wrapper .swiper-slide
+  width: 100%
+
+.zoom
+  position: fixed
+  right: .12rem
+  bottom: .52rem
+  z-index: 999
+  width: .42rem
+  height: .42rem
+  border-radius: 50%
+  text-align: center
+  line-height: .44rem
+  background: linear-gradient(to bottom, #ff4984, #fa835b)
+  .fa
+    font-size: .22rem
+    color: #ffffff
+
+.content
+  flex: 1
+  overflow-y: scroll
+  .cidian
+    .menu
+      height: .38rem
+      display: -webkit-flex
+      border-bottom: 1px solid #f1f1f1
+      nav
+        flex: 1
+        overflow: hidden
+        ul
+          width: 5.52rem
+          height: 100%
+          li
+            float: left
+            padding: 0 .08rem 0 .12rem
+            a
+              display: block
+              text-align: center
+              line-height: .38rem
+              font-size: .14rem
+            &:hover, &.cur
+              a
+                color: #f92f53
+                transform: scale(1.15)
+      p
+        width: .38rem
+        text-align: center
+        line-height: .38rem
+    .dls
+      dl
+        height: .98rem
+        padding: .1rem .12rem
+        box-sizing: border-box
+        border-top: 1px solid #f6f4f4
+        display: -webkit-flex
+        flex-direction: row-reverse
+        dt
+          margin-left: .12rem
+          img
+            display: block
+            width: 100%
+        dd
+          flex: 1
+          position: relative
+          h4
+            font-size: .15rem
+            color: #454545
+            line-height: .22rem
+          p
+            position: absolute
+            left: 0
+            bottom: .04rem
+            width: 100%
+            span
+              font-size: .12rem
+              color: #c5c5c5
+              &:nth-child(1)
+                float: left
+              &:nth-child(2)
+                float: right
+            .qz
+              font-size: .1rem
+              color: #77b8e8
+              border: 1px solid #a4d2e3
+              padding: .01rem .03rem
+              border-radius: .02rem
+
+.footer
+  height: .44rem
+  border-top: 1px solid #dfdfdf
+  background: #f5f5f5
+  a
+    float: left
+    width: 20%
+    height: 100%
+    color: #898989
+    text-align: center
+    .fa
+      font-size: .2rem
+      padding-top: .04rem
+    span
+      font-size: .1rem
+      display: block
+      text-align: center
+    &:hover, &.on
+      color: #d64541
